@@ -10,12 +10,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ScrollView{
+            
+            Text("Welecome back Harald")
+            Text("Ready to start your day?")
+            
+        }.navigationBarTitle("", displayMode: .inline)
+        .navigationBarItems(leading: Button(action: {
+            // What to perform
+        }) {
+            // How the button looks like
+            Image(systemName: "list.bullet")
+            },trailing: Button(action: {
+                // What to perform
+            }) {
+                // How the button looks like
+                Image(systemName: "bell")
+        })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView{
+            ContentView()
+        }.accentColor(.primary)
     }
 }
