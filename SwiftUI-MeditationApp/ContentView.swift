@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         ScrollView{
             
@@ -26,7 +27,7 @@ struct ContentView: View {
             }) {
                 // How the button looks like
                 Image(systemName: "bell")
-        })
+            })
     }
 }
 
